@@ -1,0 +1,206 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+div {
+    border-radius: 15px;
+}
+
+#conversation {
+    position: absolute;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid white;
+    width: 70vw;
+}
+
+#conversation p {
+    padding-left: 5px;
+}
+
+#conversation button {
+    margin: 5px;
+    color: black;
+    background-color: white;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.popup {
+    position: absolute;
+    border: 2px solid white;
+    overflow: scroll;
+    height: 80vh;
+    width: 97.5vw;
+}
+
+.popup #drawer_popup {
+    height: 97.5vh;
+    width: 97.5vw;
+}
+
+#player {
+    background-color: lightslategray;
+    border-radius: 5px;
+}
+
+#naration {
+    background-color: grey;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+#table {
+    position: absolute;
+    margin-left: 72.5vw;
+    border: 2px solid white;
+    width: 25vw;
+    height: 25vh;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#table #founditem {
+    margin-left: 10px;
+    font-size: 250%;
+}
+
+.drawer {
+    width: 90%;
+    height: 20%;
+    background-color: burlywood;
+}
+
+.item {
+    border: 0px;
+    background-color: #00000000;
+    color: white;
+}
+
+.end {
+    text-align: center;
+}
+
+.pre {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+.pre button {
+    width: 180px;
+    height: 40px;
+    font-size: large;
+    background-color: gray;
+    border: 0px solid black;
+    border-radius: 5px;
+    transition: ease-in-out 0.1s;
+}
+
+.pre button:hover {
+    background-color: rgb(112, 112, 112);
+    transition: ease-in-out 0.1s;
+}
+
+.end button {
+    width: 180px;
+    height: 40px;
+    font-size: large;
+    background-color: gray;
+    border: 0px solid black;
+    border-radius: 5px;
+    transition: ease-in-out 0.1s;
+}
+
+.end button:hover {
+    background-color: rgb(112, 112, 112);
+    transition: ease-in-out 0.1s;
+}
+
+#newspage {
+    padding: auto;
+    border: 2px groove black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    background-color: white;
+    color: black;
+    height: 85vh;
+    overflow: scroll;
+}
+
+#newspage header{
+    text-align: left;
+    padding: auto;
+    background-color: black;
+    height: fit-content;
+    color: white;
+}
+
+#newspage header h1 {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+#newspage header h2 {
+    margin: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#newspage article {
+    text-align: left;
+    margin: 15px;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#prewarning {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.backBtn {
+    color: white;
+    font-size: large;
+    margin: 5px;
+    background-color: gray;
+    border: 0px solid black;
+    border-radius: 5px;
+    transition: ease-in-out 0.1s;
+}
+.backBtn:hover {
+    background-color: rgb(112, 112, 112);
+    transition: ease-in-out 0.1s;
+}
+
+.drawer_item_button {
+    border: 0px solid black;
+    background-color: #00000000;
+    font-size: 200%;
+}
+
+.hiddentext {
+    font-size: xx-small;
+    color: black;
+}
+
+#laptop_display {
+    border: 2px solid darkgrey;
+    border-radius: 2px;
+    background-color: lightgray;
+    margin: auto;
+    padding: 5px;
+    color: black;
+    height: 72vh;
+    width: 128vh;
+} 

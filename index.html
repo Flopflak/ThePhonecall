@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link type="text/css" rel="stylesheet" href="menu-style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>The Phonecall</title>
+</head>
+<body>
+    <h1>The Phonecall</h1>
+    <h2>It is recomeneded to play in fullscreen mode.</h3>
+    <a href="game.html"><button>Play</button></a><br><br>
+    <a href="credits.html"><button style="width: 150px; height: 60px; font-size: larger;">Credits</button></a>
+    <button onclick="settings()" style="width: 150px; height: 60px; font-size: larger;">Settings</button>
+    <button style="width: 150px; height: 60px; font-size: larger;" onclick="alert('Comming soon!')">Tutorial</button>
+    <hr>
+    <h2>Made by <a href="https://flopflak.github.io/">Flopflak</a></h2>
+    <p class="hiddentext">Easter egg! :D</p>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js').then(() => {
+            console.log('Service Worker Registered Successfully');
+          }).catch(error => {
+            console.error('Service Worker Registration Failed:', error);
+          });
+        }
+    </script>      
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="game-style.css">
+    <title>The Phonecall</title>
+</head>
+<body>
+    <div id="pre1" class="pre">
+        <h4 id="prewarning">It is recomeneded to read this. It will make the game much easier to understand!</h4>
+        <div id="newspage">
+            <header>
+                <h1>☢️ Atomic News</h1>
+                <h2>Best news in the country!</h2>
+            </header>
+            <article>
+                <h2>Presidental elections are over</h2>
+                <p>
+                    Today at 15:00 vote counting was concluded and winner was announced! Results were in line with expectations from before the vote.
+                    New president will enter into office tomorow...
+                </p>
+            </article>
+            <article>
+                <h2>Kraken Studios apologise for their last movie</h2>
+                <p>
+                    Kraken Studios posted an apology for their last movie which has been released last month. The movie was one of the worst rated movies
+                    of the year, so far. And rightfuly so, general opinon was that the cast was terible, script as if it was written by an 8 year old and
+                    camera work, just terible. Though it has also been stated that tomorow, we can expect another anoucment related to the AstroBattle franchise.
+                </p>
+            </article>
+            <article>
+                <h2>Joint airforce excersises</h2>
+                <p>
+                    Tomorow, joint airforce excersises should begin. This has been planed for 2 months. It is stated that this should be the first excersise in which
+                    new nuclear capable bombers NC-92.2, developed by AmatoWorks should participate. Their details are not known to public, though it is roumored that
+                    those bombers are capable of reaching speeds never before seen on a plane this big. Those airplanes are already used by the airforce, though their 
+                    full capabilty has not been yet tested.
+                </p>
+            </article>
+            <article>
+                <h2>Tensions escalating</h2>
+                <p>
+                    In last few days, tensions with the south have escalated rapidly. This has sparked concern among not only experts, but also the general public...
+                </p>
+            </article>
+            <article>
+                <h2>New version of the EWS</h2>
+                <p>
+                    Emergency Warning System, deployed last year, as a medium to warn citizens and order them to shelter or evacuate, has recieved a new update. EWS
+                    will now not only brodcast warnings to the TV and radio, but from today, every smart device is capable of recieving and displaying EWS warnings.
+                    Goverment has worked with all major tech companies, to implement EWS compatibilty in all their new or even older devices throguh system updates.
+                    EWS now has a dedicated frequency, on which nothing else can broadcast. This frequency is able to be picked up by any device. Any broadcast station
+                    found to be broadcasting on this frequency can be fined up to a 10 million...
+                </p>
+            </article>
+        </div>
+        <button onclick="pre2()">Continue</button>
+    </div>
+    <div id="pre2" style="display: none;" class="pre">
+        <h1>Congratulations Mr. President!</h1>
+        <p>Today is your first day in office. Everyone is thrilled to see how will you rule our country and lead us the a brigther future!</p>
+        <button onclick="pre3()">Continue</button>
+    </div>
+    <div id="pre3" style="display: none;" class="pre">
+        <p>
+            It is 15:03, you just finished your speach and officialy started the JADE2 excersises. Sadly you cloudn't give them in person, it is your first day in office and there is to much work,
+            so you gave them over the internet. You enter your office, sit at your desk, and think about what changes you will set out to do. Your daydreaming is intrupted by the phone ringing. You
+            just look at it for a moment, then pick it up. It is your Minister of Defense. What cloud he want?
+        </p>
+        <button onclick="main()">Continue</button>
+    </div>
+    <div id="main" style="display: none;">
+        <h1 id="timer" style="text-align: center;">T-15:00</h1>
+        <div class="popup" id="handbook"style="display: none; overflow: scroll;">
+            <button onclick="close_popup()" class="backBtn">Back</button>
+            <h2>Presidental Handbook</h2>
+            <p>
+                Greetings, Mr. President. If you are reading this its probably your first day in office. In this handbook is everything you will need.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto earum laboriosam officiis maiores ratione asperiores, distinctio at quos enim iusto sunt error libero consequatur unde porro, et inventore dolor.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore suscipit ducimus nisi sed amet voluptas explicabo ex asperiores, alias, vitae quasi soluta, sunt repudiandae dolor excepturi? Incidunt nobis tempore mollitia.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nesciunt possimus laboriosam, qui ipsum ab quia aliquid aspernatur explicabo eaque provident veritatis totam velit itaque tempora eveniet debitis? Numquam, voluptatem.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae porro eius, omnis asperiores adipisci dolorum. Fugit dolores nihil inventore, beatae veritatis velit ad error aut earum eum illum fuga nulla!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione reiciendis ipsam, ex quisquam sit dolores molestiae dolorem corrupti pariatur saepe optio, labore tempora repudiandae placeat officia ullam unde laudantium tenetur.
+            </p>
+            <h3>Launch Codes and Phrases</h3>
+            <h4>ICBM First Strike</h4><p>7322 6747 9437</p>
+            <h4>ICBM Retaliation</h4><p>1134 2347 9976</p>
+            <h4>Nuclear Bomber Phrase</h4><p>Machine, Air, Underground</p>
+            <h3>Safety</h3>
+            <p id="howtosurvive">If you are reading this, something bad is about to happen or already happened. What should you do? Do not worry, your minister of defense should call you immidetly, he'll tell you what to do, and also the instructions how to get to the bunker.</p>
+        </div>
+        <div class="popup" id="newspaper" style="display: none; overflow: scroll;">
+            <button onclick="close_popup()" class="backBtn">Back</button>
+            <h2>Newspaper</h2>
+            <h3>Our football team loses once again.</h3>
+            <p>
+                During ongoing world football championship, our team has once again disapointed. From the begining of the championship,
+                they have only scored 2 goals. Our sports reporter interviewed one of the players, "Its sad. We had great ambitions this
+                year around. Though we need more practice, I guess. It just feels like we aren't cooperating enough, like if everyone played
+                solo." 
+            </p>
+            <h3>We have a new president!</h3>
+            <p>
+                With our elections over. Our new president entered into office today! The presidental office also stated that with new
+                head of the state, many new features and improvement came with him. One of them is a newly written presidental handbook
+                which should help new leader with any problems. This handbook was written with assistance of the former presidents. Its
+                location is only known to the president and the minister of defense. Though it has been stated that it is avaiable to the
+                president at all times and immidetly. For his safety, new bunker has been build, to which president also has access at all
+                times and immidetly. To access it, a secret item is reqired. What this item is, is again only known to the president and the
+                minister of defense. The equipment of the bunker is also secret, though it has been said that it contains backup phonelines 
+                and everything else needed to handle an emergency...
+            </p>
+            <h3>Kraken Studios are working on a new AstroBattle movie.</h3>
+            <p>
+                CEO of the Kraken Studios has confirmed the earlier leaks and stated that they are working on a new AstroBattle movie.
+                It is said that the movie has bigger budget then any other movie from the franchise. The cast has not been confirmed yet,
+                tough its roumored that we will get a new actor for the main role in the movie. Only time will tell if this is true. Kraken
+                Studios also promised that this movie will be the best movie of the year, though there are doubts after the flop of their last
+                movie...
+            </p>
+        </div>
+        <div class="popup" id="drawer_popup" style="display: none;">
+            <h1 id="drawer_item" style="font-size: 1000%; text-align: center;"><span>📰</span></h1>
+        </div>
+        <div class="popup" id="laptop" style="display: none;">
+            <br>
+            <div id="laptop_display">
+                <span onclick="opendocument(0)">budget.txt</span><br>
+                <span onclick="opendocument(1)">int_tests.txt</span><br>
+                <span onclick="opendocument(2)">Emails</span><br>
+                <span onclick="opendocument(4)">Pet.txt</span><br>
+                <span onclick="opendocument(6)">Military_Inventory.txt</span><br>
+                <span onclick="opendocument(7)">Economic_Report.txt</span><br>
+                <span onclick="opendocument(8)">National_Parks_Report.txt</span><br>
+                <span onclick="opendocument(9)">Meeting_Agenda_12th_March.txt</span><br>
+                <span onclick="opendocument(10)">Cyber_Security_Reports</span><br>
+                <span onclick="opendocument(12)">Tourism_Overview.txt</span><br>
+                <span onclick="opendocument(13)">PR_Review.txt</span><br>
+                <span onclick="opendocument(14)">Meeting Transcripts</span><br>
+            </div>
+            <button id="laptop_button" onclick="close_popup()" class="backBtn">Turn Off</button>
+        </div>        
+        <div id="table">
+            <div id="founditems">
+                <span name="laptop/phone" id='founditem' onclick='openlaptop()'>💻</span>
+            </div>
+            <hr>
+            <button class="drawer" onclick="opendrawer(0)">●</button></br>
+            <button class="drawer" onclick="opendrawer(1)">●</button></br>
+            <button class="drawer" onclick="opendrawer(2)">●</button></br>
+        </div>
+        <div id="conversation">
+            <div id="speak">
+                <button onclick="update(this.innerHTML  ,0)">Are you sure?</button><button onclick="update(this.innerHTML  ,1)">Why?</button><button onclick="update(this.innerHTML  ,2)">What can we do?</button>
+            </div>
+            <div id="textdiv">
+                <p>Hello Mr. President. We do not have much time. Let my get straight to the matter. Nuclear warheads are going to strike our country in 15 minutes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="end" id="outOfTimeEnd" style="display: none;">
+        <h1>The End</h1>
+        <h2>You ran out of time. You do not get to see world after the end. Thank God...</h2>
+        <a href="index.html"><button>Menu</button></a>
+    </div>
+    <div class="end" id="end1" style="display: none;">
+        <h1>The End</h1>
+        <h2>It was only a dream!</h2>
+        <a href="index.html"><button>Menu</button></a>
+        <p class="hiddentext">Or was it?</p>
+    </div>
+    <div class="end" id="end2" style="display: none;">
+        <h1>The End</h1>
+        <h2>Lot of people died. Though it wasn't your fault! Yaay! 🥳</h2>
+        <a href="index.html"><button>Menu</button></a>
+    </div>
+    <div class="end" id="didNotAnswerEnd" style="display: none;">
+        <h1>The End</h1>
+        <h2>They assumed you were dead.</h2>
+        <a href="index.html"><button>Menu</button></a>
+    </div>
+    <script src="drawer_contents.js"></script>
+    <script src="text.js"></script>
+    <script src="documents.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

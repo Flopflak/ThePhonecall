@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Phonecall - Settings</title>
+    <link type="text/css" rel="stylesheet" href="menu-style.css">
+</head>
+<body>
+    <h1>Settings</h1>
+    <div id="settingsDiv">
+        <p>These are just for the game customisation.</p>
+        <label for="name">Your Name:</label><br>
+        <input name="name" type="text" id="name_settings" class="settings_text_input"><br>
+        <label for="email">Your E-Mail:</label><br>
+        <input name="email" type="text" id="email_settings" class="settings_text_input"><br><br>
+        <button onclick="save()" style="width: 70px; height: 30px; font-size: medium;">Save</button>
+    </div>
+    <a href="index.html"><button>Menu</button></a>
+    <script>
+        function save() {
+            localStorage.setItem("name", document.getElementById("name_settings").value)
+            localStorage.setItem("email", document.getElementById("email_settings").value)
+        }
+    </script>
+</body>
+</html>
